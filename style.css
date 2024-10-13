@@ -1,0 +1,274 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+}
+
+.top-nav {
+    position: fixed;
+    width: 100%;
+    background-color: #111;
+    top: 0;
+    left: 0;
+    padding: 15px;
+    text-align: right;
+}
+
+.top-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.top-nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.top-nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 10px;
+    transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+}
+
+.top-nav ul li a:hover {
+    color: #00c6ff; /* Change text color on hover */
+    background-color: #333; /* Optional: change background color on hover */
+    border-radius: 5px; /* Rounded corners for hover effect */
+}
+
+.main-content {
+    margin-top: 70px; /* To avoid overlap with the fixed navbar */
+    padding: 20px;
+}
+
+section {
+    padding: 50px 0;
+    border-bottom: 1px solid white;
+}
+
+#intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.intro-text {
+    flex-grow: 1;
+}
+
+.profile-pic img {
+    width: 150px; /* Small size for the picture */
+    height: auto;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+
+#intro h1 {
+    font-size: 48px;
+    background: linear-gradient(90deg, #ff7e5f, #feb47b);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* Skills Section Styles */
+#skills {
+    padding: 50px 0;
+    border-bottom: 1px solid white;
+}
+
+#skills h2 {
+    font-size: 36px;
+    background: linear-gradient(90deg, #00f260, #0575e6);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-align: left;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; /* Merge borders */
+    margin-top: 20px; /* Space above the table */
+}
+
+td {
+    padding: 10px; /* Space within each cell */
+    color: #fff; /* White text */
+}
+
+td:first-child {
+    width: 30%; /* Fixed width for labels */
+    color: #00c6ff; /* Highlighted labels */
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.1); /* Slight background for even rows */
+}
+
+tr:nth-child(odd) {
+    background-color: rgba(255, 255, 255, 0.05); /* Slight background for odd rows */
+}
+
+/*#skills p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 10px 0;
+    color: #fff; /* White text */
+}
+
+#skills strong {
+    color: #00c6ff; /* Highlighted labels */
+    font-weight: bold;
+}*/
+
+
+#role {
+    font-size: 32px;
+    /*background: linear-gradient(90deg, #00c6ff, #0072ff);*/
+    background: linear-gradient(to right, pink, blue);
+    -webkit-background-clip: text;
+    color: /*transparent*/linear-gradient(to right, pink, blue);
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid white; /* Cursor */
+    animation: blink-caret 0.75s step-end infinite; /* Blink cursor */
+    display: inline-block;
+}
+
+
+/* Typing cursor animation */
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: white;
+    }
+}
+
+h2 {
+    background: linear-gradient(90deg, #00f260, #0575e6);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 36px;
+}
+
+/* Contact Section Styles */
+#contact {
+    padding: 50px 0;
+    border-bottom: 1px solid white;
+}
+
+#contact h2 {
+    font-size: 36px;
+    background: linear-gradient(90deg, #00f260, #0575e6);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-align: left;
+}
+
+#contact p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 10px 0;
+    color: #fff; /* White text */
+}
+
+#contact strong {
+    color: #00c6ff; /* Highlighted labels */
+    font-weight: bold;
+}
+
+#contact a {
+    color: #00c6ff; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+#contact a:hover {
+    text-decoration: underline; /* Underline on hover */
+    color: #fff; /* Change color on hover for better visibility */
+}
+
+.social-links a {
+    color: white;
+    text-decoration: none;
+    margin-right: 15px;
+    font-size: 18px;
+}
+
+.social-links a:hover {
+    color: #00c6ff;
+}
+
+/* Projects Section Styles */
+#projects {
+    padding: 50px 0;
+    border-bottom: 1px solid white;
+}
+
+#projects h2 {
+    font-size: 36px;
+    background: linear-gradient(90deg, #00f260, #0575e6);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-align: left;
+}
+
+#projects ul {
+    list-style-type: none; /* Remove default bullet points */
+    padding: 0; /* Remove default padding */
+}
+
+#projects li {
+    margin: 10px 0; /* Space between list items */
+    font-size: 18px; /* Font size for project titles */
+    color: #fff; /* White text */
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+}
+
+#projects img {
+    width: 100px; /* Set a fixed width for project images */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 15px; /* Space between image and text */
+}
+
+#projects a {
+    color: #00c6ff; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+#projects a:hover {
+    text-decoration: underline; /* Underline on hover */
+    color: #fff; /* Change color on hover for better visibility */
+}
+
+/* About Section Styles */
+#about {
+    padding: 50px 0;
+    border-bottom: 1px solid white;
+}
+
+#about h2 {
+    font-size: 36px;
+    background: linear-gradient(90deg, #00f260, #0575e6);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-align: left;
+}
+
+#about p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #fff; /* White text */
+}
+
+#about h3 {
+    margin-top: 30px; /* Space above the resume heading */
+    font-size: 24px; /* Font size for the resume heading */
+    color: #00c6ff; /* Color for the heading */
+}
